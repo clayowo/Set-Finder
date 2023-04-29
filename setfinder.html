@@ -304,13 +304,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <BODY BGCOLOR="ccccff" LINK="#483d8b" ALINK="#ffebcd" VLINK="#8b008b">
-    
+        <style>
+            body {
+              background-color: #ccccff;
+              color: #000000;
+              font-size: 1.5vw; 
+            }
+            img {
+              max-width: 100%; 
+            }
+            map area {
+              cursor: pointer;
+            }
+            .checkbox-container {
+  position: relative;
+}
+
+.checkbox-container input[type="checkbox"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+          </style>
     <CENTER>
         <font size=+3>SetFinder</font>
     </center>
     <br>
     
     <center>
+        
     <IMG ismap SRC="keyboard.gif" BORDER=0 ALIGN=top 
     ALT="keyboard" USEMAP="#keyboard">
     
@@ -373,7 +395,7 @@
         <INPUT TYPE="RESET" VALUE="Reset" ONCLICK="ClearKeyboard(pcString)"> 
         <INPUT TYPE="Button" VALUE="Play Set" ONCLICK="playSet()"> 
     </FORM>
-
+    
     <FORM>
     <TABLE>
         <TR>
